@@ -17,7 +17,7 @@
 <body id="body">
   <div id="section-1">
     <div class="fixed-top">
-    <div class="container contact-details justify-content-center justify-content-lg-start" id="contact">
+      <div class="container contact-details justify-content-center justify-content-lg-start" id="contact">
         <span class="d-flex gap-1 text-white">
           <i class="bi bi-phone"></i>
           <p>+216 53 283 233</p>
@@ -30,199 +30,244 @@
           <i class="bi bi-clock"></i>
           <p>Fri-Sun: 12:00 AM - 00:00 PM</p>
         </span>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"> 
+        <div class="container">
+          <a class="navbar-brand me-auto text-white" href="#">PastaCosi</a>
+          <a href="" class="d-lg-none d-md-flex book-table">Book a table</a>
+          <button onclick="addClassToNav()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ms-4" tabindex="0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="navbartogglericon"> 
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+                <a class="book-table ms-2 d-none d-lg-flex" href="#">Book a table</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"> 
-      <div class="container">
-        <a class="navbar-brand me-auto text-white" href="#">PastaCosi</a>
-        <a href="" class="d-lg-none d-md-flex book-table">Book a table</a>
-        <button onclick="addClassToNav()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ms-4" tabindex="0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="navbartogglericon"> 
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto gap-lg-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
-            </li>
-              <a class="book-table ms-2 d-none d-lg-flex" href="#">Book a table</a>
-          </ul>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-image bg-img-1">
+          <div class="carousel-caption">
+            <h1><span class="colored-text">Pasta Cosi</span> Restaurant</h1><br>
+            <p>Home Of The Best <b>Italian</b> Pasta Cosi.</p>
+            <span class="d-flex gap-3 justify-content-center wrap mt-3" >
+              <a href="">OUR MENU</a>
+              <a href="">BOOK A TABLE</a> 
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-2">
+          <div class="carousel-caption">
+            <h1>Our Spirit <span class="colored-text">!</span></h1><br>
+            <p class="">Break from the ordinary and escape to Pasta Cosi, your personal slice of paradise! <b>Pasta Cosi</b> is open seven days a week, for in- person service as well as takeout and delivery.</p>
+            <span class="d-flex gap-3 justify-content-center wrap mt-3">
+              <a href="">OUR MENU</a>
+              <a href="">BOOK A TABLE</a>
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-3">
+          <div class="carousel-caption">
+            <h1>Specialty <span class="colored-text">!</span></h1><br>
+            <p>Find The Perfect Pasta Recipe.
+            </p>
+            <span class="d-flex gap-3 justify-content-center wrap mt-3">
+              <a href="">OUR MENU</a>
+              <a href="">BOOK A TABLE</a>
+            </span>
+          </div>
         </div>
       </div>
-    </nav>
-  </div>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active carousel-image bg-img-1">
-        <div class="carousel-caption">
-          <h1><span class="colored-text">Pasta Cosi</span> Restaurant</h1><br>
-          <p>Home Of The Best <b>Italian</b><br>
-            Pasta Cosi.
-          </p>
-          <span class="d-flex gap-3 justify-content-center wrap" >
-            <a href="">OUR MENU</a>
-            <a href="">BOOK A TABLE</a> 
-          </span>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center" id="section2">
+      <div class="col-lg-6 col-md-12 col-sm-12 text-center text-lg-start mb-lg-0 mb-5">
+        <video loop muted autoplay="autoplay" playsinline>
+          <source src="about.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="carousel-item carousel-image bg-img-2">
-        <div class="carousel-caption">
-          <h1>Our Spirit <span class="colored-text">!</span></h1><br>
-          <p>Break from the ordinary and escape to Pasta Cosi, your personal slice of paradise! <b>Pasta Cosi</b> is open seven days a week, for in- person service as well as takeout and delivery.</p>
-          <span class="d-flex gap-3 justify-content-center wrap">
-            <a href="">OUR MENU</a>
-            <a href="">BOOK A TABLE</a>
-          </span>
-        </div>
-      </div>
-      <div class="carousel-item carousel-image bg-img-3">
-        <div class="carousel-caption">
-          <h1>Specialty <span class="colored-text">!</span></h1><br>
-          <p>Find The Perfect <br>
-            Pasta Recipe.
-          </p>
-          <span class="d-flex gap-3 justify-content-center wrap">
-            <a href="">OUR MENU</a>
-            <a href="">BOOK A TABLE</a>
-          </span>
-        </div>
+      <div class="col-lg-6 col-md-12 px-4 px-md-0 px-lg-0">
+        <h1>Discover OUR HISTORY</h1>
+        <span class="colored-text">
+          <p>Pasta Cosi is an Italian restaurant in Tunis, les Berges du Lac I. Embark on a gastronomic journey around the flavors 
+          of overseas. Our chef offers a variety of pastas, risottos but also raclette.</p>
+          <p style="font-style: italic;">WHAT you will taste at our place :</p>
+        </span>
+        <span class="">
+          <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Pasta with Parmigiano (White Sauce & Red Sauce).</p>
+          <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Risottos.</p>
+          <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Salads.</p>
+          <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Raclette.</p>
+        <span class="colored-text">
+          <p>Choose your pasta (Spaghetti, Penne, Farfalle, Tagliatelle) and it is served after dipping in a wheel of parmigiano.</p>
+        </span>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="color: red !important;">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- </div>
- <div class="container">
-  <div class="row align-items-center" id="section2">
-    <div class="col-lg-6 col-md-12 col-sm-12 text-center text-lg-start mb-lg-0 mb-5">
-      <video loop muted autoplay="autoplay" playsinline>
-        <source src="about.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="col-lg-6 col-md-12 px-4 px-md-0 px-lg-0">
-      <h1>Discover OUR HISTORY</h1>
-      <span class="colored-text">
-        <p>Pasta Cosi is an Italian restaurant in Tunis, les Berges du Lac I. Embark on a gastronomic journey around the flavors 
-        of overseas. Our chef offers a variety of pastas, risottos but also raclette.</p>
-        <p style="font-style: italic;">WHAT you will taste at our place :</p>
-      </span>
-      <span class="">
-        <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Pasta with Parmigiano (White Sauce & Red Sauce).</p>
-        <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Risottos.</p>
-        <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Salads.</p>
-        <p><i class="bi bi-check-all pe-1" style="vertical-align: middle;"></i>Raclette.</p>
-      <span class="colored-text">
-        <p>Choose your pasta (Spaghetti, Penne, Farfalle, Tagliatelle) and it is served after dipping in a wheel of parmigiano.</p>
-      </span>
-    </div>
-  </div>
- </div>
- <div class="container">
-  <div id="section3">
-  <div id="myBtnWrapper" class="text-center">
-    <button class="btn active" onclick="filterSelection('all')">All</button>
-    <button class="btn" onclick="filterSelection('drinks')">Drinks</button>
-    <button class="btn" onclick="filterSelection('salads')">Salads</button>
-    <button class="btn" onclick="filterSelection('specialty')">Specialty</button>
-  </div>
+   </div>
   <div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-6 filterDiv drinks">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv drinks">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv specialty">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv salads specialty">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv specialty">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv specialty">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv salads">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv drinks">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv salads">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
-    </div>
-    <div class="col-lg-6 filterDiv">
-      <img src="" alt="">
-      <span>
-        <p>hello<span>5.0 dt</span></p>
-      </span>
+    <div id="section3" class="row">
+      <div class="text-center menu">
+        <h1>Menu</h1>
+        <p>Check Our Tasty Menu</p>
+      </div>
+      <div id="myBtnWrapper" class="text-center">
+        <button class="mybtn action" onclick="filterSelection('all')">All</button>
+        <button class="mybtn" onclick="filterSelection('drinks')">Drinks</button>
+        <button class="mybtn" onclick="filterSelection('salads')">Salads</button>
+        <button class="mybtn" onclick="filterSelection('specialty')">Specialty</button>
+      </div>
+      <div class="container-fluid">
+        <div class="row px-lg-1 px-2 pt-4 mt-1 px-md-2" style="display: flex;row-gap: 40px;">
+          <div class="col-lg-6 filterDiv drinks">
+            <div class="product-wrapper">
+              <img src="schweppes-tonic.jpg" alt="drink" class="product-image">
+              <span class="product gap-2">
+                <p class="product-name">Schweppes Tonic</p>
+                <p class="product-price">5.0 dt</p>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv drinks">
+            <div class="product-wrapper">
+              <img src="juicy (1).jpg" alt="product" class="product-image">
+              <span class="product gap-2">
+                <p class="product-name">Fresh Orange Juice</p>
+                <p class="product-price">7.0 dt</p>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv specialty">
+            <div class="product-wrapper">
+                <img src="beffy.jpg" alt="special" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Beffy</p>
+                  <p class="product-price">24.0 dt</p>
+                </span>
+                <p class="product-description"><i>Tomato Sauce, Ground Meat, Garlic, Chili Flakes, Parsley.</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv salads">
+            <div class="product-wrapper">
+                <img src="nut-salad.jpg" alt="salad" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Nut Salad</p>
+                  <p class="product-price">25.0 dt</p>
+                </span>
+                <p class="product-description"><i>TomatoLettuce, Arugula, Cherry Tomatoes, Grilled Chicken, Goat Cheese, Nut sauce, Balsamic.</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv specialty">
+            <div class="product-wrapper">
+                <img src="juicy.jpg" alt="special" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Juicy</p>
+                  <p class="product-price">28.0 dt</p>
+                </span>
+                <p class="product-description"><i>Minced Meat, Fresh Tomato Sauce, Fresh Paris Marvel, Gratine With Grilled Cheese.</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv specialty">
+            <div class="product-wrapper">
+                <img src="cleopatra.jpg" alt="special" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Cleopatra</p>
+                  <p class="product-price">32.0 dt</p>
+                </span>
+                <p class="product-description"><i>Fillet Of Sea Bream On A Bed Of Prawns, Shrimps, Mushrooms, Basil Leaves, Zucchinis</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv salads">
+            <div class="product-wrapper">
+                <img src="caesar.jpg" alt="salad" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Caesar Salad</p>
+                  <p class="product-price">24.0 dt</p>
+                </span>
+                <p class="product-description"><i>Heart of Lettuce, Cherry Tomatoes, Grilled Chicken, Parmesans.</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv drinks">
+            <div class="product-wrapper">
+              <img src="mojito.jpg" alt="drinks" class="product-image">
+              <span class="product gap-2">  
+                <p class="product-name">Mojito</p>
+                <p class="product-price">8.0 dt</p>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv salads">
+            <div class="product-wrapper">
+              <img src="burrata-salad.jpg" alt="salad" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Burrata Salad</p>
+                  <p class="product-price">24.0 dt</p>
+                </span>
+                <p class="product-description"><i>Burrata, Arugula, Cherry Tomatoes, Balsamic Vi  negar, Virgin Olive Oil, Dried Tomatoes.</i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 filterDiv specialty">
+            <div class="product-wrapper">
+              <img src="juicy.jpg" alt="special" class="product-image">          
+              <div>
+                <span class="product gap-2">
+                  <p class="product-name">Juicy</p>
+                  <p class="product-price">25.0 dt</p>
+                </span>
+                <p class="product-description"><i>Minced Meat & Fresh Tomato Sauce,.</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-</div>
- </div>
-
-  
-    
- 
- 
- 
- 
  
  
  

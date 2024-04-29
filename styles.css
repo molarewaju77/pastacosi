@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     max-width: 1500px;
     transform: 0.5s ease all;
@@ -62,9 +62,9 @@ nav::before
 {
     color: #EEA53A  ;
 }
-#section-1 .nav-link.active
+.active
 {
-    color:#F0A73A;
+    color:#F0A73A !important;
 }
 #section-1 .contact-details
 {
@@ -126,8 +126,6 @@ nav::before
 #section-1 .carousel-caption
 {
     transform: translateY(-50%);
-    width: 55%;
-    margin: 0 auto;
     bottom: initial;
     top: 50%;
 }
@@ -138,8 +136,14 @@ nav::before
 }
 #section-1 .carousel-caption p
 {
+    width: 25%;
+    margin: 0 auto;
     font-size: 16px;
     padding-bottom: 13px;
+}
+#section-1 .bg-img-2 p
+{
+    width: 55%;
 }
 #section-1 .carousel-caption .colored-text
 {
@@ -154,7 +158,6 @@ nav::before
     padding: 9px 35px;
     color: white;
     transition: transform 0.4 ease all;
-    height: 40px;
     border: 2px solid #ffb03b ;
     border-radius: 35px;
 }
@@ -292,29 +295,129 @@ nav::before
     height: 500px;
     border-radius:7%;
 }
-#section3 .btn
+#section3 .mybtn
 {
     border: none;
     outline: none;
-    padding: 12px 16px;
-    font-weight: 500;
-    cursor: pointer;
+    padding: 5px 14px;
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: 0.5s ease all;
     border-radius: 35px;
     color:#948C81;
+    background-color: transparent;
 }
-#myBtnWrapper .btn.active
+#section3 .mybtn:focus
+{
+    outline: none !important;
+}
+#section3 .mybtn:hover
+{
+    background-color: #FFB03B;
+    color: white;
+}
+#section3 #myBtnWrapper .mybtn.action
 {
     background-color: #FFB03B;
     color: white;
 }
 
-.filterDiv {
+#section3 .filterDiv {
     display: none;
   }
-  .show {
+#section3 .show {
     display: block;
      transition:all 1s;
   }
+#section3 .product
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    vertical-align: bottom !important;
+    overflow-y: hidden;
+    width: 100%;
+}
+#section3 .product-name
+{
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    font-weight: 700;
+    color: #FF9B08;
+}
+#section3 .product-name::after
+{
+    content: '...............................................................................................................................................................................................................................................................................................................................................................................................................................................................';
+    overflow: hidden;
+    white-space: nowrap;
+    flex-grow: 1;
+    position: absolute;
+    text-overflow: clip;
+    font-weight: initial;
+    color: #DADBE0;
+    margin-left: 10px !important;
+    transform: translateY(-15%);
+}
+#section3
+{
+    overflow: hidden;
+    padding: 80px 0;
+}
+#section3 .product-price
+{
+    font-weight: 600;
+    margin: 0;
+}
+#section3 .product-image
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    outline: 5px solid #F9E9E9;
+}
+#section3 .product-description
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 14px;
+
+    color:rgb(148, 140, 129);
+}
+#section3 .product-wrapper
+{
+    display: grid; 
+    position: relative;
+    grid-gap: 25px;
+    align-items: center;
+    grid-template-columns:50px auto;
+}
+#section3 .menu h1
+{
+    font-size: 32px;
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color:  rgb(95, 89, 80);
+}
+#section3 .menu p
+{
+    color:rgb(68, 68, 68) ;
+    font-weight: 300;
+}S
+#section3 .menu
+{
+    padding-bottom: 5px;
+}
+
+
+
+
+
 
 
 
@@ -394,28 +497,38 @@ nav::before
     #section-1 .carousel-caption h1
     {
         font-size: 28px;
-    }   
-    #section-1 .carousel-caption
-    {
-        width:initial;
-    }
+    }  
     #section-1 .carousel-caption p
     {
-        font-size: 14px;
-        font-weight:420;
+        font-weight:400;
+        width: 100% !important;
     }
     #section-1 .carousel-caption span a
     {
         height:initial;
         font-size: 13px;
         font-weight: initial;
-        padding: 9px 29px;
+        padding: 9px 21px;
     }
 }
-
-
-
-
+@media screen and (max-width:360px){
+    #section-1 .carousel-caption span a
+    {
+        padding: 9px 18px;
+    }
+}
+@media screen and (max-width:320px){
+    #section-1 .carousel-caption span a
+    {
+        padding: 9px 16px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:390px){
+    #section-1 .book-table{
+        display: none;
+    }
+}
 
 
 

@@ -77,18 +77,59 @@ function addClassToNav() {
   };
   
   var myBtnWrapper = document.getElementById("myBtnWrapper");
-  var btns = myBtnWrapper.getElementsByClassName("btn");
+  var btns = myBtnWrapper.getElementsByClassName("mybtn");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
       // Check if the clicked button is already active
-      if (!this.classList.contains("active")) {
+      if (!this.classList.contains("action")) {
         // Remove "active" class from the previously active button
-        var current = document.getElementsByClassName("active");
+        var current = document.getElementsByClassName("action");
         if (current.length > 0) {
-          current[0].classList.remove("active");
+          current[0].classList.remove("action");
         }
         // Add "active" class to the clicked button
-        this.classList.add("active");
+        this.classList.add("action");
       }
     });
   }
+  ;
+
+  //for navlinks when active
+  function handleNavlinkClick()
+  {
+
+    var navlinks = document.querySelectorAll('.nav-link');
+    navlinks.forEach(function(link){
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  }
+
+  var navlinks = document.querySelectorAll('.nav-link');
+  navlinks.forEach(function(navlink){
+    navlink.addEventListener('click', handleNavlinkClick);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
