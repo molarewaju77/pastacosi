@@ -19,6 +19,10 @@
 {
     transform: 0.5s all;
 }
+#section-1 .contact-details span p
+{
+    text-decoration: none;
+}
 /* on dcroll for the contact-details*/
 .contact-details-scrolled
 {
@@ -93,7 +97,7 @@ nav::before
 {
     background-color: #FFA012;
 }
- .carousel-item::before {
+ #section-1 .carousel-item::before {
     content: "";
     background-color: rgba(12, 11, 10, 0.5);
     position: absolute;
@@ -272,6 +276,7 @@ nav::before
 {
     padding: 60px 0;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #dacdbc,#fff);
 }
 #section2 h1
 {
@@ -408,10 +413,124 @@ nav::before
 {
     color:rgb(68, 68, 68) ;
     font-weight: 300;
-}S
+}
 #section3 .menu
 {
     padding-bottom: 5px;
+}
+#section4
+{
+    overflow: hidden;
+}
+#section4 .carousel-item
+{
+    background-image: url(events-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+#section4 .carousel-item::before
+{
+    content: "";
+    background-color: rgba(12, 11, 10, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    left: 0;
+    bottom: 0;
+}
+
+#section4 .carousel-image 
+{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+#section4 .carousel-caption
+{
+    transform: translateY(-50%);
+    bottom: initial;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    left: 0%;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: #7c7975 0px 3px 8px;
+    height: 85vh;
+}
+#section4 .bg-img-1
+{
+    background-position: center;
+    background-image: transparent;
+}
+#section4 .carousel-caption img
+{
+    width: 480px;
+    box-shadow: #ffb03b 0px 3px 8px;
+    border-radius: 5%;  
+    height: 280px;
+    border-radius: 15px
+}
+#section4 .carousel-caption  .event-menu
+{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+#section4 .carousel-caption  .event-text
+{
+    width: 550px;
+}
+#section4 .carousel-caption h1,
+#section4 .carousel-caption .colored-text
+{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Satisfy", cursive !important;
+}
+#section4 .carousel-caption .colored-text
+{
+    color: #FFB03B;
+}
+#section4 .carousel-caption .event-text h2
+{
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Satisfy", cursive !important;
+    color: #FFB03B;
+}
+#section4 .carousel-caption .event-text h3
+{
+    font-size: 26px;
+    font-weight: 700;
+    border-bottom: 2px solid #FFB03B;
+    width: max-content;
+}
+#section4 .carousel-caption .event-text i
+{
+    color: #FFB038;
+    font-size: 20px;
+}
+#section4 .carousel-indicators
+{
+    position: absolute;
+    bottom: 50px;
+}
+#section4 .carousel-indicators button
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+#section4 .carousel-indicators .active
+{
+    background-color: #FFB038;
 }
 
 
@@ -421,24 +540,56 @@ nav::before
 
 
 
+@media screen and (max-width:1024px){
+    #section4 .carousel-caption
+    {
+        width: 94%;
+        height: 930px;
+    }
+    #section4 .carousel-item
+    {
+        height: 1050px !important;
+    }
+    #section4 .carousel-item::before
+    {
+        height: 1050px !important; 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 @media screen and (max-width:912px){
+    #section4 .carousel-caption img
+    {
+        width:80%;
+        margin-right:7%;
+    }
+    #section4 .carousel-caption  .event-text
+    {
+        width:91%;
+    }
+        #section4 .carousel-item
+    {
+        height: 1020px !important;
+    }
+    #section4 .carousel-item::before
+    {
+        height: 1020px !important; 
+    }
+    
+    #section4 .carousel-image 
+    {
+        height: initial; 
+    }
+    #section4 .carousel-caption  .event-menu
+    {
+    gap: 55px;
+    }
+    #section4 .carousel-caption
+    {
+        width: 94%;
+        height: 900px;
+    }
     /*#section-1 .navbar-collapse scroll class*/
     .navbar-collapse-scroll
     {
@@ -469,7 +620,40 @@ nav::before
 
 
 
-@media screen and (max-width:540px){
+
+
+
+
+
+
+
+    @media screen and (max-width:540px){
+        #section4 .carousel-caption img
+    {
+        width:90%;
+        margin-right:initial;
+    }
+    #section4 .carousel-caption  .event-text
+    {
+        width:90%;
+    }
+        #section4 .carousel-caption
+    {
+        height:1050px;
+    }
+        #section4 .carousel-item
+    {
+        height: 1150px !important;
+    }
+    #section4 .carousel-item::before
+    {
+        height: 1150px !important; 
+    }
+
+    #section4 .carousel-image 
+    {
+        height: initial; 
+    }
     /*#section-1 .navbar-collapse scroll class*/
     .navbar-collapse-scroll
     {
@@ -510,26 +694,52 @@ nav::before
         font-weight: initial;
         padding: 9px 21px;
     }
+
 }
+
 @media screen and (max-width:360px){
     #section-1 .carousel-caption span a
     {
         padding: 9px 18px;
     }
 }
+
 @media screen and (max-width:320px){
     #section-1 .carousel-caption span a
     {
         padding: 9px 16px;
         font-size: 11px;
     }
-}
-@media screen and (max-width:390px){
-    #section-1 .book-table{
-        display: none;
+    #section4 .carousel-item
+    {
+        height: 1200px !important;
+    }
+    #section4 .carousel-item::before
+    {
+    height: 1200px !important; 
+
+    }
+    #section4 .carousel-caption
+    {
+        height:1120px !important;
     }
 }
 
+
+
+    @media screen and (max-width:390px){
+        #section-1 .book-table{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:375px){
+        #section4 .carousel-indicators
+    {
+        bottom: 35px;
+    }
+    }
 
 
 
