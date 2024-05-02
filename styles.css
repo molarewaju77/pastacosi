@@ -531,7 +531,64 @@ nav::before
 {
     background-color: #FFB038;
 }
-
+#section5
+{
+    width: 98%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+#section5 form
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding: 30px 20px;
+}
+#section5 form input
+{
+    border: 1px solid #CED4DA;
+    font-size: 14px;
+    color: #757575;
+    height: 50px;
+    width: 32%;
+}
+#section5 .form input::placeholder
+{
+    font-size: 14px;
+}
+#section5 form textarea
+{   
+    width: 99%;
+    border: 1px solid #CED4DA;
+    height: 120px;
+    max-height: 200px;
+}
+#section5 button
+{
+    color: white;
+    padding: 10px 23px;
+    border-radius: 35px;
+    background-color: #FFB03B;
+    border: none;
+}
+#section5 h1
+{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Satisfy", cursive;
+}
+#section5 h1 .colored-text
+{
+    font-family: "Satisfy", cursive;
+    color: #FFB53B;
+}
+#section5 .form
+{
+    width: 99%;
+    border: 1px solid black;
+}
 #section6 .gallery-wrapper
 {
     width: 300px;
@@ -581,32 +638,15 @@ nav::before
 
 
 
-#section5 .form
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap;
-    gap: 20px;
-}
-#section5 .form input
-{
-    flex-basis: 30%;
-    border: 1px solid #CED4DA;
-    font-size: 14px;
-    color: #757575;
-    height: 50px;
-}
-#section5 .form input::placeholder
-{
-    font-size: 14px;
-}
-#section5 .form textarea
-{
-    border: 1px solid #CED4DA;
-    width: 93%;
-    height: 120px;
-    max-height: 200px;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -691,6 +731,14 @@ nav::before
         padding: 20px 5px;
         height: 92.5vh;
     }
+    #section5 form input
+    {
+    width: 43%;
+    }
+    #section5 form textarea
+    {   
+    width: 90%;
+    }
 }
 
 
@@ -705,6 +753,18 @@ nav::before
 
 
     @media screen and (max-width:540px){
+    #section5 form input
+    {
+    width: 80%;
+    }
+    #section5 form textarea
+    {   
+    width: 80%;
+    }
+    #section5 form
+    {
+        padding: 30px 0px;
+    }
     #section6 .gallery-wrapper
     {
         width: 80%;

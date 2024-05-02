@@ -366,76 +366,18 @@
     </div>
   </div>
   <div id="section5">
-    <h1>Book a <span class="colored-text"> Table</span></h1>
-    <div class="form">
-      <input type="text" placeholder="Your name" class="px-2">
-      <input type="email" placeholder="Your Email" class="px-2">
-      <input type="tel" placeholder="Your Phone" class="px-2">
-      <input type="date" placeholder="Date" class="px-2">
-      <input type="time" placeholder="select a time" class="px-2" id="timeInput" onfocus="showTimePicker()" onblur="setPlaceholder()">
-      <input type="number" placeholder="Number of people" class="px-2">
-      <textarea name="" placeholder="Message" id="" class="px-2 pt-2"></textarea>
-    </div>
-    <div id="submit"></div>
-          <button>submit</button>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    function submitForm() {
-        var inputText = document.getElementById("inputText").value;
-        var inputTime = document.getElementById("inputTime").value;
-        var textArea = document.getElementById("textArea").value;
-
-        if (inputText === "" || inputTime === "" || textArea === "") {
-            alert("Please fill in all fields.");
-        } else {
-            alert("You have successfully submitted!");
-            // You can also submit the form to a server here if needed
-        }
-    }
-</script>
-</head>
-<body>
-    <form>
-        <label for="inputText">Text:</label>
-        <input type="text" id="inputText" name="inputText"><br><br>
-        
-        <label for="inputTime">Time:</label>
-        <input type="time" id="inputTime" name="inputTime"><br><br>
-        
-        <label for="textArea">Textarea:</label>
-        <textarea id="textArea" name="textArea"></textarea><br><br>
-
-        <button type="button" onclick="submitForm()">Submit</button>
+    <h1 class="text-center pb-3">Book a <span class="colored-text"> Table</span></h1>
+    <form action="" id="myForm" class="shadow mx-2">
+      <input type="text" id="inputText" autocomplete="on" placeholder="Your name" required class="px-2">
+      <input type="email" id="inputEmail" autocomplete="on" placeholder="Your Email" required class="px-2">
+      <input type="tel" id="inputTel" autocomplete="on" placeholder="Your Phone" required class="px-2">
+      <input type="date" id="inputDate" autocomplete="on" placeholder="Date" required class="px-2">
+      <input type="time" id="inputTime" autocomplete="on" placeholder="select a time" required class="px-2">
+      <input type="number" id="inputNumber" autocomplete="on" placeholder="Number of people" required class="px-2">
+      <textarea name="textArea" id="textArea" autocomplete="on" required placeholder="Message" class="px-2 pt-2"></textarea>
+      <button type="submit" class="mt-2">Send Message</button>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
   <div id="section6">
     <h1 class="text-center">Some photos from <span class="colored-text"> Our Restaurant</span></h1>
     <div class="gallery">
@@ -481,8 +423,6 @@
       </div>
     </div>
   </div>
-  <p style="width: 200px;height: 200px;border: groove 3em red;">kkk</p>
-
 
 
  <script src="index.js"></script>

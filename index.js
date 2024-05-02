@@ -110,18 +110,18 @@ function addClassToNav() {
     navlink.addEventListener('click', handleNavlinkClick);
   });
 
-
-  function showTimePicker() {
-    var input = document.getElementById("timeInput");
-    input.removeAttribute("placeholder");
-  }
-
-function setPlaceholder() {
-  var input = document.getElementById("timeInput");
-  if (input.value === "") {
-    input.setAttribute("placeholder","select");
-  }
-}
+  document.getElementById("myForm").addEventListener("submit",
+  function(event){
+  event.preventDefault();
+  alert("Your booking request was sent. We will call back or send an Email to confirm your reservation.");
+  document.getElementById("inputText").value = "";
+  document.getElementById("inputEmail").value = "";
+  document.getElementById("inputTel").value = "";
+  document.getElementById("inputDate").value = "";
+  document.getElementById("inputTime").value = "";
+  document.getElementById("inputNumber").value = "";
+  document.getElementById("textArea").value = "";
+  });
 
 
 
