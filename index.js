@@ -111,9 +111,17 @@ function addClassToNav() {
   });
 
 
+  function showTimePicker() {
+    var input = document.getElementById("timeInput");
+    input.removeAttribute("placeholder");
+  }
 
-
-
+function setPlaceholder() {
+  var input = document.getElementById("timeInput");
+  if (input.value === "") {
+    input.setAttribute("placeholder","select");
+  }
+}
 
 
 
