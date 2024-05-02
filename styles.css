@@ -684,7 +684,7 @@ nav::before
     }
     #section6 .gallery-wrapper img
     {
-        height: auto;
+        height: 210px;
         display: block;
         width: 100%;   
         transition: all 0.4s ease-in-out;
