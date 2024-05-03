@@ -644,7 +644,7 @@ nav::before
 #section7 .carousel-item::before
 {
     content: "";
-    background-color: rgba(12, 11, 10, 0.8);
+    background: rgba(12, 11, 10, 0.7);
     position: absolute;
     top: 0;
     right: 0;
@@ -678,7 +678,6 @@ nav::before
 #section7 .carousel-caption h6
 {
     font-size: 14px;
-    font-family:;
     margin: 0 !important;
     padding: 0;
 }
@@ -701,150 +700,6 @@ nav::before
 {
     background-color: #FFB038;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#section4
-{
-    overflow: hidden;
-}
-#section4 .carousel-item
-{
-    background-image: url(events-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-}
-#section4 .carousel-item::before
-{
-    content: "";
-    background-color: rgba(12, 11, 10, 0.8);
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh; 
-    left: 0;
-    bottom: 0;
-}
-#section4 .carousel-image 
-{
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
-#section4 .carousel-caption
-{
-    transform: translateY(-50%);
-    bottom: initial;
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    left: 0%;
-    top: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: #7c7975 0px 3px 8px;
-    height: 85vh;
-}
-#section4 .bg-img-1
-{
-    background-position: center;
-    background-image: transparent;
-}
-#section4 .carousel-caption img
-{
-    width: 480px;
-    box-shadow: #ffb03b 0px 3px 8px;
-    border-radius: 5%;  
-    height: 280px;
-    border-radius: 15px
-}
-#section4 .carousel-caption  .event-menu
-{
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 90px;
-}
-#section4 .carousel-caption  .event-text
-{
-    width: 550px;
-}
-#section4 .carousel-caption h1,
-#section4 .carousel-caption .colored-text
-{
-    font-size: 32px;
-    font-weight: 700;
-    font-family: "Satisfy", cursive !important;
-}
-#section4 .carousel-caption .colored-text
-{
-    color: #FFB03B;
-}
-#section4 .carousel-caption .event-text h2
-{
-    font-size: 26px;
-    font-weight: 600;
-    font-family: "Satisfy", cursive !important;
-    color: #FFB03B;
-}
-#section4 .carousel-caption .event-text h3
-{
-    font-size: 26px;
-    font-weight: 700;
-    border-bottom: 2px solid #FFB03B;
-    width: max-content;
-}
-#section4 .carousel-caption .event-text i
-{
-    color: #FFB038;
-    font-size: 20px;
-}
-#section4 .carousel-indicators
-{
-    position: absolute;
-    bottom: 50px;
-}
-#section4 .carousel-indicators button
-{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-#section4 .carousel-indicators .active
-{
-    background-color: #FFB038;
-}
-
-
 
 
 
