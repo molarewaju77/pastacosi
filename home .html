@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form Submission</title>
-<script>
-    function submitForm() {
-        var inputText = document.getElementById("inputText");
-        var inputTime = document.getElementById("inputTime");
-        var textArea = document.getElementById("textArea");
-
-        if (inputText.value === "" || inputTime.value === "" || textArea.value === "") {
-            alert("Please fill in all fields.");
-        } else {
-            alert("Your booking request was sent. We will call back or send an Email to confirm your reservation");
-            // Clear input fields              . Tha
-            inputText.value = "";
-            inputTime.value = "";
-            textArea.value = "";
-        }
-    }
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Book a table</title>
 </head>
 <body>
-    <form>
-        <label for="inputText">Text:</label>
-        <input type="mail" id="inputText" name="inputText"><br><br>
-        
-        <label for="inputTime">Time:</label>
-        <input type="time" id="inputTime" name="inputTime"><br><br>
-        
-        <label for="textArea">Textarea:</label>
-        <textarea id="textArea" name="textArea"></textarea><br><br>
+    <div id="bookings" class="text-center">
+        <h1 class="text-center pb-3">Book a <span class="colored-text"> Table</span></h1>
+        <form action="" id="myForm" class="shadow mx-2">
+          <input type="text" id="inputText" autocomplete="on" placeholder="Your name" required class="px-2">
+          <input type="email" id="inputEmail" autocomplete="on" placeholder="Your Email" required class="px-2">
+          <input type="tel" id="inputTel" autocomplete="on" placeholder="Your Phone" required class="px-2">
+          <input type="date" id="inputDate" autocomplete="on" placeholder="Date" required class="px-2">
+          <input type="time" id="inputTime" autocomplete="on" placeholder="select a time" required class="px-2">
+          <input type="number" id="inputNumber" autocomplete="on" placeholder="Number of people" required class="px-2">
+          <textarea name="textArea" id="textArea" autocomplete="on" required placeholder="Message" class="px-2 pt-2"></textarea>
+          <button type="submit" class="mt-2">Send Message</button>
+        </form>
+    </div>
+    <footer class="text-center"  id="booking-footer">
+      <h1>Pasta Cosi</h1>
+      <p><i>Pasta Cosi is specialized in Pasta with Parmigiano, Risotto, Salads & Raclette</i></p>
+      <div class="icon-wrapper d-flex justify-content-center gap-2">
+        <div class="social">
+          <i class="bi bi-facebook"></i>
+        </div>
+        <div class="social">  
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+      <div class="link-wrapper  d-flex flex-column justify-content-center gap-lg-5 gap-3 flex-lg-row">
+        <a href="index.html">Home</a>
+        <a href="">About</a>
+        <a href="">Menu</a>
+        <a href="">Event</a>
+        <a href="">Gallery</a>
+        <a href="">Contact</a>
+      </div>
+      <p class="pt-4">© Copyright <b>Pasta Cosi.</b>  All Rights Reserved</p>  
+      <p class="designer">Designed by <a href="" class="colored-text">Mic_dev</a></p>
+    </footer>
 
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        
+  document.getElementById("myForm").addEventListener("submit",
+  function(event){
+  event.preventDefault();
+  alert("Your booking request was sent. We will call back or send an Email to confirm your reservation.");
+  document.getElementById("inputText").value = "";
+  document.getElementById("inputEmail").value = "";
+  document.getElementById("inputTel").value = "";
+  document.getElementById("inputDate").value = "";
+  document.getElementById("inputTime").value = "";
+  document.getElementById("inputNumber").value = "";
+  document.getElementById("textArea").value = "";
+  });
+
+
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
-```
-
-In this code, I've added an email input field (`inputEmail`). Inside the `submitForm()` function, I added a check to ensure that the email field doesn't contain any numbers. If it does, it alerts the user to enter a valid email address without numbers. If the form submission is successful, it clears all input fields except the email field.

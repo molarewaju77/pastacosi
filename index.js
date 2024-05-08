@@ -39,7 +39,15 @@ function addClassToNav() {
         navbartogglericon.classList.remove('navbar-toggler-scrolled');
     } else{
         navbartogglericon.classList.add('navbar-toggler-scrolled')
-    }
+    };
+
+    var arrowUp = document.getElementById('arrowUp'); 
+    var scrollValue = window.scrollY;
+    if (scrollValue > 150 ){
+      arrowUp.classList.add('arrow-wrapper-scrolled');
+    } else{
+      arrowUp.classList.remove('arrow-wrapper-scrolled')
+    };
   }
   window.addEventListener('scroll' , changeBg);
 
@@ -123,14 +131,15 @@ function addClassToNav() {
   document.getElementById("textArea").value = "";
   });
 
-
-
-
-
-
-
-
-
+  document.getElementById("contactForm").addEventListener("submit",
+  function(event){
+  event.preventDefault();
+  alert("Your booking request was sent. We will call back or send an Email to confirm your reservation.");
+  document.getElementById("inputText").value = "";
+  document.getElementById("inputEmail").value = "";
+  document.getElementById("inputText").value = "";
+  document.getElementById("textArea").value = "";
+  });
 
 
 
