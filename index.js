@@ -1,13 +1,22 @@
-function addClassToNav() {
-    var styleElement = document.getElementById("navbar");
-    var scrollValue = window.scrollY;
-    if (scrollValue < 30){
-    styleElement.classList.remove("showBg");
-} else {
-    styleElement.classList.toggle("showBg");
-}
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const togglerButton = document.querySelector('.navbar-toggler');
+  const navbarlinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
+  const navbar = document.querySelector('.navbar');
 
+  togglerButton.addEventListener('click', function() {
+    navbar.classList.toggle('showBg');
+  });
+  navbarlinks.forEach(function(link){
+    link.addEventListener('click', function () {
+      if
+      (navbar.classList.contains('showBg'))
+      {
+        navbar.classList.remove('showBg');
+      }
+    });
+  });
+});
+//To change bg on scroll
   function changeBg(){
     var navbar = document.getElementById('navbar'); 
     var scrollValue = window.scrollY;
@@ -51,7 +60,7 @@ function addClassToNav() {
   }
   window.addEventListener('scroll' , changeBg);
 
-
+//for the filter section
   filterSelection("all")
   function filterSelection(c) {
     var x, i;
@@ -118,20 +127,8 @@ function addClassToNav() {
     navlink.addEventListener('click', handleNavlinkClick);
   });
 
-  document.getElementById("myForm").addEventListener("submit",
-  function(event){
-  event.preventDefault();
-  alert("Your booking request was sent. We will call back or send an Email to confirm your reservation.");
-  document.getElementById("inputText").value = "";
-  document.getElementById("inputEmail").value = "";
-  document.getElementById("inputTel").value = "";
-  document.getElementById("inputDate").value = "";
-  document.getElementById("inputTime").value = "";
-  document.getElementById("inputNumber").value = "";
-  document.getElementById("textArea").value = "";
-  });
-
-  document.getElementById("contactForm").addEventListener("submit",
+//for form when submit is clicked
+  document.getElementById("MForm").addEventListener("submit",
   function(event){
   event.preventDefault();
   alert("Your booking request was sent. We will call back or send an Email to confirm your reservation.");
@@ -140,8 +137,24 @@ function addClassToNav() {
   document.getElementById("inputText").value = "";
   document.getElementById("textArea").value = "";
   });
+  
 
-
+//to close collapse item when navlink is clicked
+  document.addEventListener('DOMContentLoaded',function(){
+    const navbarlinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
+    const togglerButton = document.querySelector('.navbar-toggler');
+    navbarlinks.forEach(function(link){
+      link.addEventListener('click',function(){
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if 
+        (navbarCollapse.classList.contains('show')){
+          navbarCollapse.classList.remove('show');
+          togglerButton.classList.add('collapsed');
+          togglerButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
 
 
 

@@ -1179,6 +1179,10 @@ footer .icon-wrapper .social:hover
 
 
     @media screen and (max-width:540px){
+    #section9 form input
+    {
+        width: 100% !important;
+    }
     footer p
     {
         width: 90%;
